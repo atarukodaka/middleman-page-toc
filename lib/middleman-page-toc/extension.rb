@@ -9,7 +9,7 @@ module Middleman
         page ||= current_page
         default_options = {
           use_collapsing: true,
-          expand: true,
+          expand: false,
           button_caption: 'ToC',
           target_id: 'toc_content'
         }
