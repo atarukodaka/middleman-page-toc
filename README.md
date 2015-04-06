@@ -1,6 +1,6 @@
 # middleman-page-toc
 
-An extension to Middlean which provides a helper method to render table of contents of the specified page/resource.
+An extension to Middleman which provides a helper method to render table of contents of the specified page/resource.
 
 ## Installation
 
@@ -24,17 +24,18 @@ Use **redcarpet** as markdown engine and enable :toc_data option. and then activ
 
 ```ruby
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :autolink => true, :smartypants => true, :tables => true, :with_toc_data => true
+set :markdown, :fenced_code_blocks => true, :autolink => true,
+  :smartypants => true, :tables => true, :with_toc_data => true
 
 activate :page_toc
 ```
 
 ## Usage
 
-use 'render_toc()' helper function on your layouts or page.
+use **render_toc()** helper function on your layouts or page.
 
 ```ruby
-<%= render_toc(current_page)
+<%= render_toc(current_page) %>
 ```
 
 ### options

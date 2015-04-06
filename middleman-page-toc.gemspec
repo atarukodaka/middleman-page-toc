@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Write a short summary, because Rubygems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "http://atarukodaka.github.com/middleman-page-toc"
+  spec.homepage      = "http://github.com/atarukodaka/middleman-page-toc"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
