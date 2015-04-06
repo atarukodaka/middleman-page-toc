@@ -32,7 +32,7 @@ activate :page_toc
 
 ## Usage
 
-use **render_toc()** helper function on your layouts or page.
+use **render_toc(page, options)** helper function on your layout or page.
 
 ```ruby
 <%= render_toc(current_page) %>

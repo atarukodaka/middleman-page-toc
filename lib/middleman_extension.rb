@@ -1,2 +1,2 @@
-require 'middleman-aks'
+require 'middleman-page-toc'
 
