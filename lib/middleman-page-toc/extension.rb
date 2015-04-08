@@ -16,7 +16,7 @@ module Middleman
         options.reverse_merge! default_options
 
         target_id = options[:target_id]
-        use_collapsing = optinos[:use_collapsing]
+        use_collapsing = options[:use_collapsing]
         collapse_in = (use_collapsing && options[:expand] == false || page.data.show_toc == false) ? 'in' : ''
         button_caption = options[:button_caption]
 
