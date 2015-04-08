@@ -3,7 +3,7 @@ module Middleman
     module Helpers
       def render_toc(page=nil, options = {})
         unless config.markdown_engine == :redcarpet && config.markdown[:with_toc_data]
-          return "render_toc: use redcarpet as markdown_engin with markdown_option of :with_toc_data")
+          return "render_toc: use redcarpet as markdown_engin with markdown_option of :with_toc_data"
         end
         
         page ||= current_page
