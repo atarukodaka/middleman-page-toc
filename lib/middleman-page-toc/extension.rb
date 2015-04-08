@@ -13,7 +13,7 @@ module Middleman
           button_caption: 'ToC',
           target_id: 'toc_content'
         }
-        options.reverse_merge! default_optinos
+        options.reverse_merge! default_options
 
         target_id = options[:target_id]
         use_collapsing = optinos[:use_collapsing]
