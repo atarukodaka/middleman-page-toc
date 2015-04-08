@@ -17,7 +17,15 @@ module Middleman
 
         target_id = options[:target_id]
         use_collapsing = options[:use_collapsing]
-        collapse_in = (use_collapsing && options[:expand] == false || page.data.show_toc == false) ? 'in' : ''
+  
+        if use_collapsing
+          if options[:expand] == true || page.data.show_toc == true
+            collapse_in = 'in'
+          end
+        else
+          collapse_in = 'in'
+        end
+#        collapse_in = (use_collapsing && (options[:expand] == true || page.data.show_toc == true)) ? 'in' : ''
         button_caption = options[:button_caption]
 
         content_tag(:div, :class=>'toc') do
