@@ -1,4 +1,4 @@
-[![Gem Version](http://img.shields.io/gem/v/middleman-page-toc.svg?style=flat)][gem]
+[![Gem Version](http://img.shields.io/gem/v/middleman-page-toc.svg?style=flat)](gem)
 [![Build Status](https://travis-ci.org/atarukodaka/middleman-page-toc.svg)](https://travis-ci.org/atarukodaka/middleman-page-toc)
 [![Coverage Status](https://coveralls.io/repos/atarukodaka/middleman-page-toc/badge.svg)](https://coveralls.io/r/atarukodaka/middleman-page-toc)
 [![Code Climate](https://codeclimate.com/github/atarukodaka/middleman-page-toc/badges/gpa.svg)](https://codeclimate.com/github/atarukodaka/middleman-page-toc)
