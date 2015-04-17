@@ -5,3 +5,4 @@ gemspec
 
 
 gem 'redcarpet'
+gem 'coveralls', require: false
