@@ -36,7 +36,13 @@ module Middleman
           end
           ar << content_tag(:div, :id=>target_id, :class=>"toc_content collapse #{collapse_in}") do
             markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML_TOC)
-            markdown.render(File.read(page.source_file))
+
+            content = File.read(page.source_file)
+            yaml_regex = /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
+            if content =~ yaml_regex
+              content.sub!(yaml_regex, '')
+            end
+            markdown.render(content)
           end
           ar.join.html_safe
           end
