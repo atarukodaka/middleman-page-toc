@@ -1,5 +1,13 @@
 module Middleman
   module PageToc
+    class Manager
+    end
+  end
+end
+
+
+module Middleman
+  module PageToc
     module Helpers
       def render_toc(page=nil, options = {})
         unless config.markdown_engine == :redcarpet && config.markdown[:with_toc_data]
